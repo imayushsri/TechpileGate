@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
-        * {
-    box-sizing: border-box;
-}
+        *{
+            box-sizing: border-box;
+        }
         body{
-            overflow-x: hidden;
+            /* overflow: hidden; */
+            width: 98%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .name{
             display: flex;
             align-items: center;
             justify-content: center;
             background: #c0c0c0;
-            height: 4vw;
+            height: 4.8vw;
             border-radius: 1px;
             width: 70%;
             font-size: 3vw;
@@ -24,11 +34,17 @@
             color: white;
             text-shadow: 0px 6px 10px rgba(5, 5, 5, 0.2);
             box-shadow: inset 0px 0px 10px 5px rgba(12, 12, 12, 0.2);
+            margin-left: auto;
+            margin-right: auto;
         }
         .main{
             display: flex;
             flex-direction: row;
-            width: 100%;
+            overflow: hidden;
+        }
+        .left, .center, .right {
+            max-width: 100%;
+            overflow: hidden;
         }
         .lr1c1{
             background: #c0c0c0;
@@ -53,37 +69,27 @@
         .crc{
             background: #d61424;
             height:4.8vw;
-            width:3vw;
+            width:2vw;
         }
         .crc1{
             height: 0.5vw;
             background-color: white;
-            width: 3vw;
+            width: 2vw;
         }
         .crc2{
             height: 3.5vw;
-            width: 3vw;
+            width: 2vw;
             background: #d61424;
         }
         .crc3{
             height: 2vw;
-            width: 3vw;
+            width: 2vw;
             background: #c0c0c0;
         }
         .crc4{
             height: 6.8vw;
-            width: 3vw;
+            width: 2vw;
             background:#d61424;
-        }
-        .container-fluid{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .left{
-            display: flex;
-            flex-direction: column;
         }
         .row{
             display: flex;
@@ -98,19 +104,19 @@
         }
         .blue{
             background: #4c85ca;
-            box-shadow: inset 0vw 2vw 4vw -1vw #334472;
+            box-shadow: inset 0vw 2vw 1.5vw -1vw #1e2843;
         }
         .lborder{
-            border-left: 1px solid black;
+            border-left: 0.1vw solid black;
         }
         .rborder{
-            border-right: 1px solid black;
+            border-right: 0.1vw solid black;
         }
         .tborder{
-            border-top: 1px solid black;
+            border-top: 0.1vw solid black;
         }
         .bborder{
-            border-bottom: 1px solid black;
+            border-bottom: 0.1vw solid black;
         }
         .text{
             font-size: 2.6vw;
@@ -119,7 +125,7 @@
             font-family: 'Times New Roman';
         }
         .door{
-            height: 4.3vw;
+            height: 4.2vw;
             width: 4.8vw;
             background-color:   #4c85ca;
             transform: skewX(-10deg) translateX(-0.4vw);
@@ -130,7 +136,7 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="name">TECHPILE TECHNOLOGY PVT. LTD.</div>
         <div class="main">
             <div class="left">
